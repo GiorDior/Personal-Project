@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./assets/style.css" />
+    <script src ="column.js"></script>
     <title>GiorDior Project</title>
   </head>
 
@@ -9,17 +10,95 @@
     <header>
       <h1>GiorDior Project</h1>
 
+    <img id = "img-1" src="./assets/GiorDior_logo.jpg" alt="Logo of GiorDior">
+
       <section>
-        <h2>What is GiorDior</h2>
+        <h2>What is GiorDior right now?</h2>
+        <p>
+          <ul>
+            <li>On going project that keeps me accountable.</li>
+            <li>Challenges my creative thinking.</li>
+            <li>A playground for learning.</li>
+            <li>Through trial and error</li>
+            <li>Not money oriented?</li>
+    
+          </ul>
+        </p>
       </section>
       <section>
-        <h2>What products does GiorDior provide?</h2>
+        <h2>GiorDior Branding</h2>
+        <div class = "row">
+          <div class = "column">
+            <img src="./assets/Girl T-Shirt.jpg" alt="GiorDior red original t-shirt design" style="width: 10%;">
+            <img src="./assets/GiorDior_logo2.jpg" alt="GiorDior logo" style="width: 10%;">
+            <img src="./assets/Dreams4Wicked.jpg" alt="Dreams are for the wicked t-shirt design" style="width: 10%;">
+          </div>
+          <div class = "column">
+            <img src="assets/CloudGior.jpg" alt="GiorDior box logo tshirt design" style="width: 10%;">
+            <img src="assets/Disk Jockey.jpg" alt="GiorDior disk jockey logo tshirt design" style="width: 10%;">
+            <img src="assets/RetroGirl.jpg" alt="GiorDior retro girl tshirt" style="width:10%;">
+          </div>
+        </div>
+        <script>
+          // Get the elements with class="column"
+          var elements = document.getElementsByClassName("column");
+          
+          // Declare a "loop" variable
+          var i;
+          
+          // Full-width images
+          function one() {
+            for (i = 0; i < elements.length; i++) {
+              elements[i].style.flex = "100%";
+            }
+          }
+          
+          // Two images side by side
+          function two() {
+            for (i = 0; i < elements.length; i++) {
+              elements[i].style.flex = "50%";
+            }
+          }
+          
+          // Four images side by side
+          function four() {
+            for (i = 0; i < elements.length; i++) {
+              elements[i].style.flex = "25%";
+            }
+          }
+          </script>
       </section>
       <section>
-        <h2>What new products are coming soon?</h2>
+        <h2>What do you like about the current website?</h2>
       </section>
       <section>
-        <h2>How do these product benefit users?</h2>
+        <h2>How would you like to change the current website?</h2>
+      </section>
+      <section>
+        <h2>What pages would you like to add?</h2>
+      </section>
+      <section>
+        <h2>What is your target market?</h2>
+      </section>
+      <section>
+        <h2>How does GiorDior benefit its user?</h2>
+          <ul>
+            <li>Helpful information</li>
+          </ul>
+      </section>
+      <section>
+        <h2>What is GiorDior's story?</h2>
+        <section>
+          <p>
+            <ul>
+              <li>Through trial and error.</li>
+              <li>watch something grow from a seed to a flower.</li>
+            </ul>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>What is the future of GiorDior?</h2>
       </section>
     </header>
   </body>
